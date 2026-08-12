@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR Agri Farms | Premium Agriculture & Training</title>
+    <meta name="description" content="Premium Farming Materials, Professional Training & Hands-on Agricultural Workshops.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-circle"></div>
+        <span class="loader-text">Loading SR Agri Farms</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-leaf text-gradient"></i>
+                <span>SR Agri Farms</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#training" class="nav-link">Training</a></li>
+                <li><a href="#workshops" class="nav-link">Workshops</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="cart-icon-link" id="open-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg parallax-bg" style="background-image: url('assets/images/hero.jpg');"></div>
+        <div class="hero-overlay"></div>
+        
+        <!-- Floating 3D Elements container (managed by JS) -->
+        <div id="particles-js" class="particles">
+            <div class="floating-element leaf" style="top: 20%; left: 10%;"></div>
+            <div class="floating-element mushroom" style="top: 60%; left: 80%;"></div>
+            <div class="floating-element drop" style="top: 80%; left: 30%;"></div>
+            <div class="floating-element leaf2" style="top: 30%; left: 70%;"></div>
+        </div>
+
+        <div class="container hero-content">
+            <h1 class="reveal-up">Elevate Your Agricultural Yield</h1>
+            <p class="hero-subtitle reveal-up delay-1">Partner with SR Agri Farms for enterprise-grade farming materials, high-yield organic solutions, and expert cultivation training.</p>
+            <div class="hero-buttons reveal-up delay-2">
+                <a href="#products" class="btn btn-primary magnetic-btn"><span class="btn-text">Explore Solutions</span></a>
+                <a href="#contact" class="btn btn-glass magnetic-btn"><span class="btn-text">Partner With Us</span></a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll down</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-image-wrapper reveal-left">
+                <div class="about-image glass-panel">
+                    <img src="assets/images/workshop.jpg" alt="About SR Agri Farms">
+                    <div class="experience-badge glass">
+                        <h2>10+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content reveal-right">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Cultivating Excellence in Modern Agriculture</h2>
+                <p class="about-desc">At SR Agri Farms, we blend traditional wisdom with modern technology to provide premium farming materials and comprehensive training support.</p>
+                
+                <div class="about-features">
+                    <div class="feature-item hover-lift">
+                        <div class="feature-icon"><i class="fa-solid fa-bullseye text-gradient"></i></div>
+                        <div>
+                            <h3>Our Mission</h3>
+                            <p>To empower farmers and gardening enthusiasts with top-quality materials and practical knowledge.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item hover-lift">
+                        <div class="feature-icon"><i class="fa-solid fa-eye text-gradient"></i></div>
+                        <div>
+                            <h3>Our Vision</h3>
+                            <p>Creating a sustainable future where organic farming is accessible to everyone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section glass-dark">
+        <div class="container stats-container">
+            <div class="stat-item reveal-up">
+                <h3 class="counter" data-target="1000">0</h3><span class="plus">+</span>
+                <p>Happy Farmers</p>
+            </div>
+            <div class="stat-item reveal-up delay-1">
+                <h3 class="counter" data-target="150">0</h3><span class="plus">+</span>
+                <p>Workshops</p>
+            </div>
+            <div class="stat-item reveal-up delay-2">
+                <h3 class="counter" data-target="500">0</h3><span class="plus">+</span>
+                <p>Products Delivered</p>
+            </div>
+            <div class="stat-item reveal-up delay-3">
+                <h3 class="counter" data-target="10">0</h3><span class="plus">+</span>
+                <p>Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-tag">Our Products</span>
+                <h2 class="section-title">Professional Farming Solutions</h2>
+                <p>Enterprise-grade materials designed for maximum yield and sustainability.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card glass-panel hover-tilt reveal-up" data-id="1" data-name="Commercial Mushroom Kit" data-price="35.00" data-img="assets/images/product.jpg" data-desc="Complete commercial-grade organic mushroom cultivation kit for high-volume yield.">
+                    <div class="product-img-container">
+                        <img src="assets/images/product.jpg" alt="Mushroom Growing Kit">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-glass quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Commercial Mushroom Kit</h3>
+                        <p>Complete all-in-one organic cultivation kit.</p>
+                        <div class="product-footer">
+                            <span class="price">$35.00</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card glass-panel hover-tilt reveal-up delay-1" data-id="2" data-name="Premium Mushroom Spawn" data-price="15.00" data-img="assets/images/spawn.jpg" data-desc="High-yield premium mushroom spawn strains optimized for commercial environments.">
+                    <div class="product-img-container">
+                        <img src="assets/images/spawn.jpg" alt="Premium Mushroom Spawn">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-glass quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Mushroom Spawn</h3>
+                        <p>High-yield commercial mushroom spawn strains.</p>
+                        <div class="product-footer">
+                            <span class="price">$15.00</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card glass-panel hover-tilt reveal-up delay-2" data-id="3" data-name="Organic Bulk Fertilizers" data-price="22.00" data-img="assets/images/fertilizer.jpg" data-desc="100% natural, nutrient-rich compost and fertilizers suitable for large scale farming.">
+                    <div class="product-img-container">
+                        <img src="assets/images/fertilizer.jpg" alt="Organic Bulk Fertilizers">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-glass quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Organic Bulk Fertilizers</h3>
+                        <p>Nutrient-rich natural fertilizers for high yield.</p>
+                        <div class="product-footer">
+                            <span class="price">$22.00</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card glass-panel hover-tilt reveal-up delay-3" data-id="4" data-name="Pro Seed Trays & Cocopeat" data-price="12.00" data-img="assets/images/seed_tray.jpg" data-desc="Professional-grade starting materials for perfect germination rates.">
+                    <div class="product-img-container">
+                        <img src="assets/images/seed_tray.jpg" alt="Pro Seed Trays & Cocopeat">
+                        <div class="product-overlay">
+                            <button class="btn btn-sm btn-glass quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pro Seed Trays & Cocopeat</h3>
+                        <p>High-quality starting materials for perfect germination.</p>
+                        <div class="product-footer">
+                            <span class="price">$12.00</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4 reveal-up">
+                <button class="btn btn-primary demo-btn">View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Agricultural Training</h2>
+                <p>Learn from the experts with our comprehensive courses.</p>
+            </div>
+
+            <div class="training-grid">
+                <div class="training-card hover-lift reveal-up">
+                    <div class="training-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Mushroom Cultivation</h3>
+                    <ul class="training-details">
+                        <li><i class="fa-regular fa-clock"></i> 4 Weeks</li>
+                        <li><i class="fa-solid fa-layer-group"></i> Beginner Friendly</li>
+                    </ul>
+                    <div class="badge demo">Certified</div>
+                </div>
+
+                <div class="training-card hover-lift reveal-up delay-1">
+                    <div class="training-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Organic Farming</h3>
+                    <ul class="training-details">
+                        <li><i class="fa-regular fa-clock"></i> 6 Weeks</li>
+                        <li><i class="fa-solid fa-layer-group"></i> Intermediate</li>
+                    </ul>
+                    <div class="badge demo">Certified</div>
+                </div>
+
+                <div class="training-card hover-lift reveal-up delay-2">
+                    <div class="training-icon"><i class="fa-solid fa-water"></i></div>
+                    <h3>Hydroponics</h3>
+                    <ul class="training-details">
+                        <li><i class="fa-regular fa-clock"></i> 3 Weeks</li>
+                        <li><i class="fa-solid fa-layer-group"></i> Advanced</li>
+                    </ul>
+                    <div class="badge demo">Certified</div>
+                </div>
+
+                <div class="training-card hover-lift reveal-up delay-3">
+                    <div class="training-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                    <h3>Terrace Gardening</h3>
+                    <ul class="training-details">
+                        <li><i class="fa-regular fa-clock"></i> 2 Weeks</li>
+                        <li><i class="fa-solid fa-layer-group"></i> Beginner</li>
+                    </ul>
+                    <div class="badge demo">Certified</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workshops Section (Timeline) -->
+    <section id="workshops" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-tag">Events</span>
+                <h2 class="section-title">Upcoming Workshops</h2>
+                <p>Join our hands-on sessions and master practical farming skills.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel hover-lift">
+                        <div class="workshop-date">Oct 15, 2026</div>
+                        <h3>Mushroom Cultivation Workshop</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> SR Agri Main Farm</p>
+                        <p><i class="fa-solid fa-users"></i> 12 Seats Available</p>
+                        <a href="#contact" class="btn btn-sm btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel hover-lift">
+                        <div class="workshop-date">Nov 05, 2026</div>
+                        <h3>Organic Farming Intensive</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> City Greenhouse Center</p>
+                        <p><i class="fa-solid fa-users"></i> 5 Seats Available</p>
+                        <a href="#contact" class="btn btn-sm btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel hover-lift">
+                        <div class="workshop-date">Dec 12, 2026</div>
+                        <h3>Urban Home Gardening</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> Online / Virtual</p>
+                        <p><i class="fa-solid fa-users"></i> 50+ Seats Available</p>
+                        <a href="#contact" class="btn btn-sm btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Masonry) -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Visuals</span>
+                <h2 class="section-title">Farm Gallery</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal-up"><img src="assets/images/workshop.jpg" alt="Gallery 1"></div>
+                <div class="gallery-item reveal-up delay-1"><img src="assets/images/product.jpg" alt="Gallery 2"></div>
+                <div class="gallery-item reveal-up delay-2"><img src="assets/images/spawn.jpg" alt="Gallery 3"></div>
+                <div class="gallery-item tall reveal-up"><img src="assets/images/landscape.jpg" alt="Gallery 4"></div>
+                <div class="gallery-item reveal-up delay-1"><img src="assets/images/seed_tray.jpg" alt="Gallery 5"></div>
+                <div class="gallery-item reveal-up delay-2"><img src="assets/images/fertilizer.jpg" alt="Gallery 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="section glass-dark text-white">
+        <div class="container text-center">
+            <h2 class="section-title mb-4 reveal-up">What Farmers Say</h2>
+            <div class="testimonial-slider reveal-up delay-1">
+                <div class="testimonial-slides">
+                    <div class="testimonial-slide active">
+                        <p class="quote">"The mushroom cultivation training completely changed how I approach my business. Highly recommended!"</p>
+                        <h4>- John D., Urban Farmer</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="quote">"Premium quality products and their spawn is incredibly reliable. Best in the market."</p>
+                        <h4>- Sarah M., Garden Enthusiast</h4>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="quote">"Attended the organic farming workshop. Hands-on, practical, and highly professional."</p>
+                        <h4>- Michael K., Agripreneur</h4>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section bg-light">
+        <div class="container faq-container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item reveal-up">
+                    <button class="accordion-btn">What training do you provide?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>We provide comprehensive training in Mushroom Cultivation, Organic Farming, Hydroponics, and Terrace Gardening. Both theoretical and practical sessions are included.</p>
+                    </div>
+                </div>
+                <div class="accordion-item reveal-up delay-1">
+                    <button class="accordion-btn">Do you sell farming materials?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Yes, we offer premium quality mushroom spawn, organic fertilizers, garden tools, bio fertilizers, and complete growing kits.</p>
+                    </div>
+                </div>
+                <div class="accordion-item reveal-up delay-2">
+                    <button class="accordion-btn">Can beginners join workshops?<i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Absolutely! Our workshops are designed for all skill levels, and we offer specific courses tailored entirely for beginners to get them started smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <div class="info-card glass-panel hover-lift">
+                        <i class="fa-solid fa-phone text-gradient"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-card glass-panel hover-lift mt-2">
+                        <i class="fa-solid fa-envelope text-gradient"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@sragrifarms.demo</p>
+                        </div>
+                    </div>
+                    <div class="info-card glass-panel hover-lift mt-2">
+                        <i class="fa-solid fa-location-dot text-gradient"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Eco Valley, Greenfield District</p>
+                        </div>
+                    </div>
+                    <div class="map-placeholder mt-2 glass-panel">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p>Google Maps Placeholder</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form glass-panel reveal-right">
+                    <form onsubmit="event.preventDefault(); alert('Demo only: Form submitted!');">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="4" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary magnetic-btn w-100"><span class="btn-text">Send Message</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col reveal-up">
+                <a href="#" class="logo text-white">
+                    <i class="fa-solid fa-leaf text-gradient"></i>
+                    <span>SR Agri Farms</span>
+                </a>
+                <p class="mt-2">Empowering farmers with premium materials and professional training since 2016.</p>
+                <div class="social-icons mt-2">
+                    <a href="#" class="hover-lift demo-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover-lift demo-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover-lift demo-btn"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover-lift demo-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col reveal-up delay-1">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#training">Training</a></li>
+                    <li><a href="#workshops">Workshops</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col reveal-up delay-2">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Cultivation Kits</a></li>
+                    <li><a href="#">Organic Supplies</a></li>
+                    <li><a href="#">Expert Consultations</a></li>
+                    <li><a href="#">Farm Setup</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col reveal-up delay-3">
+                <h4>Newsletter</h4>
+                <p>Subscribe for farming tips.</p>
+                <div class="newsletter-form mt-1">
+                    <input type="email" placeholder="Email Address">
+                    <button class="btn btn-primary btn-sm demo-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="vg-badge hover-lift">
+                    <span>This website is a DEMO created by</span>
+                    <strong>VG Agencies.</strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Product Quick View Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-content glass-panel">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <div class="modal-img-container" id="modal-img"></div>
+                <div class="modal-details">
+                    <h2 id="modal-title">Product Name</h2>
+                    <p class="price" id="modal-price">$0.00</p>
+                    <p class="modal-desc" id="modal-desc">Product description goes here.</p>
+                    <hr>
+                    <div class="modal-actions">
+                        <div class="qty-selector">
+                            <button class="qty-btn" id="qty-minus">-</button>
+                            <input type="number" id="qty-input" value="1" min="1">
+                            <button class="qty-btn" id="qty-plus">+</button>
+                        </div>
+                        <button class="btn btn-primary magnetic-btn" id="modal-add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal-overlay" id="cart-modal">
+        <div class="modal-content glass-panel cart-modal-content">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="cart-header">
+                <h2>Your Order Request</h2>
+            </div>
+            <div class="cart-items-container" id="cart-items">
+                <!-- Cart items injected by JS -->
+                <p class="empty-cart-msg">Your order list is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total Estimated Cost:</span>
+                    <strong id="cart-total-price">$0.00</strong>
+                </div>
+                <p class="cart-note text-muted" style="font-size: 0.85rem; margin: 10px 0;">*This is a static demo. No actual payment will be processed.</p>
+                <form id="checkout-form" class="checkout-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Business Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <button type="submit" class="btn btn-primary w-100 mt-2">Submit Order Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
