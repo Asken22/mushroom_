@@ -8,39 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500); // Small delay to ensure smooth transition
     });
 
-    // --- Custom Cursor ---
-    const cursorDot = document.querySelector('[data-cursor-dot]');
-    const cursorOutline = document.querySelector('[data-cursor-outline]');
-    
-    // Only enable custom cursor on desktop
-    if (window.innerWidth > 768) {
-        window.addEventListener('mousemove', (e) => {
-            const posX = e.clientX;
-            const posY = e.clientY;
 
-            cursorDot.style.left = `${posX}px`;
-            cursorDot.style.top = `${posY}px`;
-
-            // Add smooth delay to outline
-            cursorOutline.animate({
-                left: `${posX}px`,
-                top: `${posY}px`
-            }, { duration: 500, fill: "forwards" });
-        });
-
-        // Hover effect for interactive elements
-        const interactives = document.querySelectorAll('a, button, .hover-tilt, .hover-lift, .accordion-btn');
-        interactives.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-                cursorOutline.style.backgroundColor = 'rgba(46, 204, 113, 0.1)';
-            });
-            el.addEventListener('mouseleave', () => {
-                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-                cursorOutline.style.backgroundColor = 'transparent';
-            });
-        });
-    }
 
     // --- Magnetic Buttons ---
     const magneticBtns = document.querySelectorAll('.magnetic-btn');

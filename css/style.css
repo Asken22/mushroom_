@@ -96,24 +96,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
-/* Custom Cursor */
-.cursor-dot, .cursor-outline {
-    position: fixed;
-    top: 0; left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 10000;
-    pointer-events: none;
-}
-.cursor-dot {
-    width: 8px; height: 8px;
-    background-color: var(--primary-green);
-}
-.cursor-outline {
-    width: 40px; height: 40px;
-    border: 2px solid rgba(46, 204, 113, 0.5);
-    transition: width 0.2s, height 0.2s, border-color 0.2s;
-}
 
 /* Layout Utilities */
 .container {
@@ -363,30 +345,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-/* Particles & Floating Elements */
-.particles {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    z-index: 0;
-    pointer-events: none;
-}
-.floating-element {
-    position: absolute;
-    width: 50px; height: 50px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: float 6s ease-in-out infinite;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
-}
-.leaf { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%232ecc71" d="M256 0c-44.2 0-80 35.8-80 80 0 16 4.7 30.8 12.7 43.1L54.6 257.2c-15.6 15.6-15.6 40.9 0 56.6l19.8 19.8c15.6 15.6 40.9 15.6 56.6 0l134.1-134.1c12.3 8 27.1 12.7 43.1 12.7 44.2 0 80-35.8 80-80s-35.8-80-80-80z"/></svg>'); }
-.mushroom { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%238d6e63" d="M256 0C132.3 0 32 100.3 32 224c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32C480 100.3 379.7 0 256 0z"/><path fill="%23d7ccc8" d="M192 256h128v224H192z"/></svg>'); animation-delay: 1.5s; width: 70px; height: 70px; }
-.leaf2 { background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%2327ae60" d="M256 0c-44.2 0-80 35.8-80 80 0 16 4.7 30.8 12.7 43.1L54.6 257.2c-15.6 15.6-15.6 40.9 0 56.6l19.8 19.8c15.6 15.6 40.9 15.6 56.6 0l134.1-134.1c12.3 8 27.1 12.7 43.1 12.7 44.2 0 80-35.8 80-80s-35.8-80-80-80z"/></svg>'); animation-delay: 3s; width: 40px; height: 40px; }
-
-@keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(10deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-}
 
 .scroll-indicator {
     position: absolute;
@@ -798,7 +756,6 @@ h1, h2, h3, h4, h5, h6 {
     .gallery-grid { grid-template-columns: 1fr; }
     .gallery-item.large { grid-column: span 1; grid-row: span 1; }
     .hero-buttons { flex-direction: column; }
-    .cursor-dot, .cursor-outline { display: none; }
 }
 
 /* Modals & Cart */
